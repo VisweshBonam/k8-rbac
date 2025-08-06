@@ -7,11 +7,13 @@ data:
       - system:nodes
       username: system:node:{{EC2PrivateDNSName}}
 
-  mapUsers: |
-    - groups:
-      - trainee-role
-      userarn: arn:aws:iam::057260092371:user/viswesh
-      username: viswesh
+
+  mapRoles: |
+  - rolearn: arn:aws:iam::057260092371:role/EKS-DEVOPS_ROLE
+    username: dev-user
+    groups:
+      - dev-readonly
+
     
 kind: ConfigMap
 metadata:
