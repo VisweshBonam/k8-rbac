@@ -43,7 +43,7 @@ metadata:
 # When you create the "monitoring-endpoints" ClusterRole,
 # the rules below will be added to the "monitoring" ClusterRole.
 rules:
-- apiGroups: ["v1"]
+- apiGroups: [""]
   resources: ["persistentvolumes"]
   verbs: ["get", "list", "watch"]
 
