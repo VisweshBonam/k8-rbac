@@ -9,7 +9,7 @@ data:
 
   mapUsers: |
     - groups:
-       roboshop
+      - roboshop
       userarn: arn:aws:iam::057260092371:user/pawankalyan
       username: pawankalyan
     
@@ -19,5 +19,4 @@ metadata:
   creationTimestamp: "2025-08-07T07:48:11Z"
   name: aws-auth
   namespace: kube-system
-  resourceVersion: "1338"
   uid: 089003d1-6533-4eae-a219-1650b1d62ea6
