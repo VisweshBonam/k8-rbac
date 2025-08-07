@@ -9,7 +9,7 @@ data:
 
   mapUsers: |
     - groups:
-      - roboshop
+       roboshop
       userarn: arn:aws:iam::057260092371:user/pawankalyan
       username: pawankalyan
     
