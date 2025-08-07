@@ -5,7 +5,11 @@ metadata:
   name: roboshop-trainee
 rules:
 - apiGroups: [""] # "" indicates the core API group
-  resources: ["pods"] # nouns
+  resources: ["pods, services"] # nouns
+  verbs: ["get", "watch", "list"] # actions
+
+- apiGroups: ["apps"] # "" indicates the core API group
+  resources: ["deployments"] # nouns
   verbs: ["get", "watch", "list"] # actions
 
 ---
